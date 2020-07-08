@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title data-react-helmet="true">t5</title>
+	<meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,minimum-scale=1,shrink-to-fit=no" />
+	<meta data-react-helmet="true" name="title" content="Stamurai - Speech Therapy App for Stuttering" />
+	<meta data-react-helmet="true" name="description" content="Fight stuttering/stammering with cutting edge speech therapy on Stamurai app. Fluency shaping, stuttering modification, DAF, meditations and much more" />
+	<meta data-react-helmet="true" property="og:title" content="Stamurai - Speech Therapy App for Stuttering" />
+	<meta data-react-helmet="true" property="og:description" content="Fight stuttering/stammering with cutting edge speech therapy on Stamurai app. Fluency shaping, stuttering modification, DAF, meditations and much more" />
+	<meta data-react-helmet="true" property="og:image" content="https://stamurai.com/assets/images/logo_stamurai.png" />
+	<meta data-react-helmet="true" property="og:image:type" content="image/png" />
+	<meta data-react-helmet="true" property="og:url" content="https://stamurai.com" />
+	<meta data-react-helmet="true" property="og:type" content="website" />
+	<meta data-react-helmet="true" property="og:site_name" content="stamurai.com" />
+	<meta data-react-helmet="true" name="twitter:card" content="product" />
+	<meta data-react-helmet="true" name="twitter:title" content="Stamurai - Speech Therapy App for Stuttering" />
+	<meta data-react-helmet="true" name="twitter:description" content="Fight stuttering/stammering with cutting edge speech therapy on Stamurai app. Fluency shaping, stuttering modification, DAF, meditations and much more" />
+	<meta data-react-helmet="true" name="twitter:image" content="https://stamurai.com/assets/images/logo_stamurai.png" />
+	<meta data-react-helmet="true" name="twitter:site" content="stamurai.com" />
+	<meta data-react-helmet="true" name="twitter:creator" content="stamurai.com" />
+	<link data-react-helmet="true" rel="canonical" href="https://stamurai.com" />
+	<link data-react-helmet="true" rel="alternate" href="https://stamurai.com" hreflang="en-in" />
+
+	<link rel="shortcut icon" href="/favicon.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+	<!--  Bootstrap css  -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" integrity="sha256-xpVuhxDPR39wFEQDha4W7kuMx+z9Av3dTS8MbH/RWEU=" crossorigin="anonymous" />
+	<!--  My Imports  -->
+	<link rel="stylesheet" href="/dist/main.css?v=4dbfb097-7873-46fa-aaf8-39f12f3f7ee0" />
+	<link rel="stylesheet" href="/dist/chunk.css?v=4dbfb097-7873-46fa-aaf8-39f12f3f7ee0" />
+
+	<script type='application/ld+json'>
+		{
+			"@context": "http://www.schema.org",
+			"@type": "Corporation",
+			"name": "Stamurai",
+			"url": "https://stamurai.com",
+			"sameAs": [
+				"https://stamurai.com",
+				"https://www.facebook.com/stamurai/",
+				"https://www.linkedin.com/company/stamurai/",
+				"https://twitter.com/StamuraiA",
+				"https://www.youtube.com/channel/UCuJlkA7NUezGeCeOZTKYOuQ",
+				"https://www.instagram.com/stamurai_app/"
+			],
+			"logo": "/favicon.png",
+			"image": "/favicon.png",
+			"description": "Speech Therapy app designed for people who stutter",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "C-1003, Essel Towers, Pilot Court",
+				"postOfficeBoxNumber": "MG Road",
+				"addressLocality": "Gurgaon",
+				"addressRegion": "Haryana",
+				"postalCode": "122002",
+				"addressCountry": "India"
+			},
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "phone_number",
+				"contactType": "General"
+			}
+		}
+	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98797162-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-98797162-1');
+	</script>
+
+	<script type="text/javascript">
+		window.$crisp = [];
+		window.CRISP_WEBSITE_ID = "0521fe8d-691f-4689-a2e1-f3e056c89d77";
+		(function() {
+			d = document;
+			s = d.createElement("script");
+			s.src = "https://client.crisp.chat/l.js";
+			s.async = 1;
+			d.getElementsByTagName("head")[0].appendChild(s);
+		})();
+	</script>
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function(f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function() {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '596025744595803');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img height="1" width="1" src="https://www.facebook.com/tr?id=596025744595803&ev=PageView
+            &noscript=1" />
+	</noscript>
+	<!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+	<div id="fb-root"></div>
+	<div id="app">
+		<div>
+			<nav class="navbar navbar-expand-md navbar-light fixed-top" id="myScrollspy">
+				<div class="container"><a aria-current="page" class="navbar-brand active" href="/"><img src="/assets/images/logo.svg?v=1" alt="home" class="navbar-logo" /></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+						<ul class="navbar-nav main-navbar-content">
+							<li class="nav-item"><a aria-current="page" class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="/therapy-protocol">Therapy Protocol</a></li>
+							<li class="nav-item"><a class="nav-link" href="/features">Features</a></li>
+							<li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+							<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+							<li class="nav-item d-md-none d-inline"><a href="https://stamurai.com/blog/"><button class="btn-primary-1">Blog</button></a></li>
+						</ul>
+					</div><a href="https://stamurai.com/blog/" class="d-none d-md-inline"><button class="btn-primary-1 float-right">Blog</button></a>
+				</div>
+			</nav>
+			<div class="jumbotron jumbotron-fluid" id="home">
+				<div class="container">
+					<div class="row px-2">
+						<div class="col-12 pt-5 position-relative col-md-7"><img src="/assets/images/icons/ic-3.svg?v=1" alt="" class="jumbotron-icon-1" /><img src="/assets/images/icons/ic-1.svg?v=1" alt="" class="jumbotron-icon-2" /><img src="/assets/images/icons/ic-2.svg?v=1" alt="" class="jumbotron-icon-3" />
+							<h1 class="jumbotron-title">Learn how to fight stuttering</h1>
+							<blockquote class="blockquote">
+								<p class="mb-0">Speech Therapy app designed for people who stutter</p>
+							</blockquote><a href="https://stamurai.app/HeGkGwMip6" target="_blank"><button class="btn-primary-1 jumbotron-btn">Download for FREE</button></a>
+						</div>
+						<div class="col-12 px-0 text-center d-flex justify-content-center col-md-5"><img src="/assets/images/illustrations/main.png" alt="home" class="jumbotron-img" /></div>
+					</div>
+				</div>
+			</div>
+			<section class="container">
+				<div class="img-backlinks-container"><img src="/assets/images/backlinks.png" alt="home" /></div>
+			</section>
+			<section class="container how-it-works" id="how-it-works">
+				<h6 class="sub-title">LETS DIVE IN</h6>
+				<h2 class="title">How it works?</h2><img class="how-it-works-icon-1" src="/assets/images/icons/ic-7.svg?v=1" alt="" /><img class="how-it-works-icon-2" src="/assets/images/icons/ic-8.svg?v=1" alt="" />
+				<div class="row pt-4 px-2">
+					<div class="col-lg-4 col-12 order-1 order-lg-1">
+						<div class="how-it-works-card"><img src="/assets/images/icons/ic-4.svg?v=1" alt="" />
+							<h4 class="how-it-works-card-title">20 minutes a day</h4>
+							<blockquote class="blockquote">
+								<p class="mb-0">Spend 20-40 minutes a day practicing various speech therapy exercises in the app.</p>
+							</blockquote>
+						</div>
+					</div>
+					<div class="col-lg-4 col-12 order-4 order-lg-2"><img src="/assets/images/illustrations/thinking.png" alt="Thinking" class="img-thinking" /></div>
+					<div class="col-lg-4 col-12 order-2 order-lg-3">
+						<div class="how-it-works-card"><img src="/assets/images/icons/ic-5.svg?v=1" alt="" />
+							<h4 class="how-it-works-card-title">Gain Understanding</h4>
+							<blockquote class="blockquote">
+								<p class="mb-0">Develop insights into stuttering and your speech mechanism. Overcome fear and anxiety with real life practice.</p>
+							</blockquote>
+						</div>
+					</div>
+					<div class="col-lg-4 col-12 order-3 order-lg-4 offset-lg-4">
+						<div class="how-it-works-card"><img src="/assets/images/icons/ic-6.svg?v=1" alt="" />
+							<h4 class="how-it-works-card-title">Develop correct speech</h4>
+							<blockquote class="blockquote">
+								<p class="mb-0">Increase fluency, reduce secondary behaviors, learn to live confidently. Fight stuttering, become a Stamurai.</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container features" id="features">
+				<h6 class="sub-title">Mobile App</h6>
+				<h2 class="title">Features</h2>
+				<div class="features-box"><img src="/assets/images/icons/ic-9.svg?v=1" class="features-icon-1" alt="" /><img src="/assets/images/icons/ic-10.svg?v=1" class="features-icon-2" alt="" /><img src="/assets/images/icons/ic-13.svg?v=1" class="features-icon-3" alt="" /><img src="/assets/images/icons/ic-11.svg?v=1" class="features-icon-4" alt="" /><img src="/assets/images/icons/ic-5.svg?v=1" class="features-icon-5" alt="" /><img src="/assets/images/icons/ic-12.svg?v=1" class="features-icon-6" alt="" />
+					<div class="features-box-mobile one"><img src="/assets/images/sc1_mock.png" alt="" /></div>
+					<div class="features-box-mobile two"><img src="/assets/images/sc2_mock.png" alt="" /></div>
+				</div>
+			</section>
+			<section class="container faqs" id="faq">
+				<h6 class="sub-title">What people ask</h6>
+				<h2 class="title">FAQ</h2><img class="faqs-floating-icon-left" src="/assets/images/icons/ic-12.svg?v=1" alt="" />
+				<div class="row pt-4">
+					<div class="col-md-6 col-12 p-2 d-flex justify-content-center align-items-start justify-content-md-end ">
+						<div class="faq-card ">
+							<div class="accordion" id="faq-0">
+								<div class="faq-card-header">
+									<div class="faq-card-icon"><img src="/assets/images/icons/ic-4.svg?v=1" alt="" /></div>
+									<h3 class="faq-card-title">Would I able to cure my stutering?</h3><button class="faq-card-action collapsed" type="button" data-toggle="collapse" data-target="#faq-0-collapse" aria-expanded="true" aria-controls="collapseOne"><i class="faq-chevron fas fa-chevron-down"></i></button>
+								</div>
+								<div id="faq-0-collapse" class="collapse hide" aria-labelledby="headingOne" data-parent="#faq-0">
+									<div class="card-body">Cure is the wrong word. The aim of modern speech therapy is to develop correct speech. It is a subtle difference but important nonetheless.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-12 p-2 d-flex justify-content-center align-items-start justify-content-md-start ">
+						<div class="faq-card ">
+							<div class="accordion" id="faq-1">
+								<div class="faq-card-header">
+									<div class="faq-card-icon"><img src="/assets/images/icons/ic-3.svg?v=1" alt="" /></div>
+									<h3 class="faq-card-title">Are stuttering and stammering the same?</h3><button class="faq-card-action collapsed" type="button" data-toggle="collapse" data-target="#faq-1-collapse" aria-expanded="true" aria-controls="collapseOne"><i class="faq-chevron fas fa-chevron-down"></i></button>
+								</div>
+								<div id="faq-1-collapse" class="collapse hide" aria-labelledby="headingOne" data-parent="#faq-1">
+									<div class="card-body">Yes they are the same.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-12 p-2 d-flex justify-content-center align-items-start justify-content-md-end ">
+						<div class="faq-card active">
+							<div class="accordion" id="faq-2">
+								<div class="faq-card-header">
+									<div class="faq-card-icon"><img src="/assets/images/icons/ic-16.svg?v=1" alt="" /></div>
+									<h3 class="faq-card-title">After gaining spontaneous fluency, are there chances of relapse?</h3><button class="faq-card-action collapsed" type="button" data-toggle="collapse" data-target="#faq-2-collapse" aria-expanded="true" aria-controls="collapseOne"><i class="faq-chevron fas fa-chevron-down"></i></button>
+								</div>
+								<div id="faq-2-collapse" class="collapse hide" aria-labelledby="headingOne" data-parent="#faq-2">
+									<div class="card-body">Fluency, as an acquired skill, can&#x27;t be taken for granted by the stutterer. Many occasions of speech would be faced with challenges. So even after you have attained spontaneous fluency, a review of 20 minutes each day of the techniques will keep you fluent.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-12 p-2 d-flex justify-content-center align-items-start justify-content-md-start ">
+						<div class="faq-card active">
+							<div class="accordion" id="faq-3">
+								<div class="faq-card-header">
+									<div class="faq-card-icon"><img src="/assets/images/icons/ic-16.svg?v=1" alt="" /></div>
+									<h3 class="faq-card-title">How much time will it take for it to work?</h3><button class="faq-card-action collapsed" type="button" data-toggle="collapse" data-target="#faq-3-collapse" aria-expanded="true" aria-controls="collapseOne"><i class="faq-chevron fas fa-chevron-down"></i></button>
+								</div>
+								<div id="faq-3-collapse" class="collapse hide" aria-labelledby="headingOne" data-parent="#faq-3">
+									<div class="card-body">It depends vastly on the severity of stuttering and on how much you practice. Broadly it can take about 6 months to attain spontaneous fluency. You should definitely start seeing improvements wthin 1 month.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-12 p-2 d-flex justify-content-center align-items-start justify-content-md-end ">
+						<div class="faq-card ">
+							<div class="accordion" id="faq-4">
+								<div class="faq-card-header">
+									<div class="faq-card-icon"><img src="/assets/images/icons/ic-16.svg?v=1" alt="" /></div>
+									<h3 class="faq-card-title">I don&#x27;t stutter alone. So how do I practice?</h3><button class="faq-card-action collapsed" type="button" data-toggle="collapse" data-target="#faq-4-collapse" aria-expanded="true" aria-controls="collapseOne"><i class="faq-chevron fas fa-chevron-down"></i></button>
+								</div>
+								<div id="faq-4-collapse" class="collapse hide" aria-labelledby="headingOne" data-parent="#faq-4">
+									<div class="card-body">Most stutterers don&#x27;t stutter alone. We are soon launching audio calls so you can practice with others in the app. For now you can use voluntary stuttering.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-12 p-2 d-flex justify-content-center align-items-start justify-content-md-start ">
+						<div class="faq-card ">
+							<div class="accordion" id="faq-5">
+								<div class="faq-card-header">
+									<div class="faq-card-icon"><img src="/assets/images/icons/ic-3.svg?v=1" alt="" /></div>
+									<h3 class="faq-card-title">What is the clinical name for the therapy I would be undergoing?</h3><button class="faq-card-action collapsed" type="button" data-toggle="collapse" data-target="#faq-5-collapse" aria-expanded="true" aria-controls="collapseOne"><i class="faq-chevron fas fa-chevron-down"></i></button>
+								</div>
+								<div id="faq-5-collapse" class="collapse hide" aria-labelledby="headingOne" data-parent="#faq-5">
+									<div class="card-body">The therapy is an integration of &#x27;Stuttering Modification&#x27; and &#x27;Fluency Shaping&#x27;, the two most popular therapy techniques.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container-fluid reviews">
+				<h6 class="sub-title">What people will say</h6>
+				<h2 class="title">Reviews</h2><img class="reviews-floating-icon" src="/assets/images/icons/ic-14.svg?v=1" alt="" />
+				<div class="review-card-container">
+					<div class="review-card">
+						<div class="review-card-icon"><img src="/assets/images/icons/ic-19.svg?v=1" alt="" /></div>
+						<div class="review-card-content">
+							<p class="m-0">Deals with stammering, introduction, why it happens, various techniques to curb it. All are perfectly described in this app. Also the video conferences with other persons in this app has instilled a lot of confidence in me.</p>
+							<h6>Chetan Pandey</h6>
+						</div>
+					</div>
+					<div class="review-card">
+						<div class="review-card-icon"><img src="/assets/images/icons/ic-20.svg?v=1" alt="" /></div>
+						<div class="review-card-content">
+							<p class="m-0">I don&#x27;t have the time to see an in office Speech Therapist since I work a 9 to 5 so this is great for me. I am determined to beat my stutter and this app finally gives me hope to succeed in fluency in the privacy of my home.</p>
+							<h6>Kenneth Citizen</h6>
+						</div>
+					</div>
+					<div class="review-card">
+						<div class="review-card-icon"><img src="/assets/images/icons/ic-19.svg?v=1" alt="" /></div>
+						<div class="review-card-content">
+							<p class="m-0">Thank you for the amazing app. It&#x27;s definately working for me. Also the support team is very very helpful, solves the problem on the same day.</p>
+							<h6>Pragati Shyamal</h6>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container famous">
+				<h6 class="sub-title">Some people who stuttered and have conquered it</h6>
+				<h2 class="title">You are in a great company</h2>
+				<div class="row">
+					<div class="col-md-6 col-12 pb-3 d-flex align-items-center">
+						<div class="famous-card">
+							<div class="famous-card-icon"><img src="/assets/images/icons/ic-20.svg?v=1" alt="" /></div>
+							<div class="famous-card-content">
+								<p class="m-0">The stutterer must conquer his own problems - no one else can do the job for him.</p>
+								<h5>Van Riper</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-12 pb-3 text-center"><img src="/assets/images/illustrations/famous.png" class="famous-image" alt="famous people" /></div>
+				</div>
+			</section>
+			<section class="container blog">
+				<h6 class="sub-title">time to read</h6>
+				<h2 class="title">Blogs</h2><img class="blog-floating-icon-1" src="/assets/images/icons/ic-14.svg?v=1" alt="" /><img class="blog-floating-icon-2" src="/assets/images/icons/ic-15.svg?v=1" alt="" />
+				<div class="row py-4">
+					<div class="col-12 col-md-6 d-flex flex-column"><a href="https://stamurai.com/blog/stuttering/" target="_blank" class="blog-card-big">
+							<div class="blog-card-big-image"><img src="/assets/images/blog1.jpg?v=1" alt="stuttering" class="img-blog" /></div>
+							<div class="blog-card-big-content">
+								<h5>What is stuttering</h5>
+								<p class="m-0">Stuttering is when disfluencies disrupt the forward flow of speech due to their severity or high frequency. Experts characterize stuttering by the unnaturally high frequency and/or prolonged stoppages in speech. There are three core behaviours one can find in the speech of people who stutter - repetitions of sounds, syllables or monosyllabic words, prolongation of sounds and blocks or blockage of airflow in speech. People who stutter often develop “management” tactics to bypass words they find difficult to pronounce. These are called secondary behaviours.</p>
+							</div>
+							<div class="blog-card-big-footer"><span>Read Full Story <i class="fas fa-arrow-right"></i></span><small>8 min read</small></div>
+						</a></div>
+					<div class="col-12 col-md-6"><a class="blog-card" href="https://stamurai.com/blog/treatment-for-stuttering/" target="_blank">
+							<div class="blog-card-image"><img src="/assets/images/blog2.jpg?v=1" alt="stuttering treatment" class="img-blog" /></div>
+							<div class="blog-card-content">
+								<h5>Stuttering Treatment</h5>
+								<p class="m-0">Treatments for stuttering are most effective when they are started in the earliest. Treatments vary depending on the severity and the age of the person who stutters.</p>
+							</div>
+						</a><a class="blog-card" href="https://stamurai.com/blog/stuttering-in-children-understanding-shame/" target="_blank">
+							<div class="blog-card-image"><img src="/assets/images/blog3.jpg?v=1" alt="stuttering in Children" class="img-blog" /></div>
+							<div class="blog-card-content">
+								<h5>Understand Stuttering in Children</h5>
+								<p class="m-0">Ever since he was a child, he was aware of his stuttering. So much so, that whenever his parents took him to a pool party for neighbourhood kids or a birthday party, he could feel his chest tighten and breathing stop.</p>
+							</div>
+						</a><a href="https://stamurai.com/blog/reining-in-the-bullies/" target="_blank" class="blog-card">
+							<div class="blog-card-image"><img src="/assets/images/blog4.jpg?v=1" alt="stuttering and bullying" class="img-blog" /></div>
+							<div class="blog-card-content">
+								<h5>Reining in the Bullies</h5>
+								<p class="m-0">As a child who stutters, social interactions in school and on the playground are difficult as it is. But if further complicated by bullying and teasing, it can make them retreat into a shell of loneliness and isolation.</p>
+							</div>
+						</a></div>
+				</div>
+			</section>
+			<div class="py-5"></div>
+			<div class="py-5"></div>
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-12 pb-4 order-2 order-lg-1 text-center text-lg-left"><img src="/assets/images/logo.svg?v=1" class="navbar-logo" alt="" />
+							<p class="m-0 footer-copyright">2020 © All rights reserved.</p>
+							<div class="social-icons"><a href="https://www.facebook.com/stamurai/" target="_blank" class="social-icon"><img src="/assets/images/social/fb.svg?v=1" alt="" /></a><a href="https://www.linkedin.com/company/stamurai/" target="_blank" class="social-icon"><img src="/assets/images/social/li.svg?v=1" alt="" /></a><a href="https://twitter.com/StamuraiA" target="_blank" class="social-icon"><img src="/assets/images/social/tw.svg?v=1" alt="" /></a><a href="https://www.youtube.com/channel/UCuJlkA7NUezGeCeOZTKYOuQ" target="_blank" class="social-icon"><img src="/assets/images/social/yt.svg?v=1" alt="" /></a><a href="https://www.instagram.com/stamurai_app/" target="_blank" class="social-icon"><img src="/assets/images/social/instagram.png" alt="" /></a></div>
+						</div>
+						<div class="col-lg-8 col-12 order-1 order-lg-2">
+							<div class="row">
+								<div class="col-md-3 col-6 pb-3">
+									<h6 class="footer-title">Company</h6>
+									<ul class="footer-links">
+										<li class="footer-link"><a href="/about">About us</a></li>
+										<li class="footer-link"><a href="#">Security &amp; privacy</a></li>
+										<li class="footer-link"><a href="#">Careers</a></li>
+										<li class="footer-link"><a href="https://stamurai.com/blog/" target="_blank">Blogs</a></li>
+									</ul>
+								</div>
+								<div class="col-md-3 col-6 pb-3">
+									<h6 class="footer-title">Product</h6>
+									<ul class="footer-links">
+										<li class="footer-link"><a href="/about">About us</a></li>
+										<li class="footer-link"><a href="#">Security &amp; privacy</a></li>
+										<li class="footer-link"><a href="#">Careers</a></li>
+										<li class="footer-link"><a href="https://stamurai.com/blog/" target="_blank">Blogs</a></li>
+									</ul>
+								</div>
+								<div class="col-md-3 col-6 pb-3">
+									<h6 class="footer-title">Security</h6>
+									<ul class="footer-links">
+										<li class="footer-link"><a href="/about">About us</a></li>
+										<li class="footer-link"><a href="#">Security &amp; privacy</a></li>
+										<li class="footer-link"><a href="#">Careers</a></li>
+										<li class="footer-link"><a href="https://stamurai.com/blog/" target="_blank">Blogs</a></li>
+									</ul>
+								</div>
+								<div class="col-md-3 col-6 pb-3">
+									<h6 class="footer-title">Download</h6>
+									<div class="footer-download-links"><a href="https://play.google.com/store/apps/details?id=com.stamurai.stamurai" target="_blank" class="footer-download-link"><img src="/assets/images/download/google_play.svg?v=1" alt="" /></a><a href="https://apps.apple.com/us/app/stamurai-stuttering-therapy/id1488071175" target="_blank" class="footer-download-link"><img src="/assets/images/download/app_store.svg?v=1" alt="" /></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.2/firebase-app.js"></script>
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.2/firebase-auth.js"></script>
+	<script src="/dist/bundle.js?v=4dbfb097-7873-46fa-aaf8-39f12f3f7ee0"></script>
+	<script src="/dist/vendors.js?v=4dbfb097-7873-46fa-aaf8-39f12f3f7ee0"></script>
+	<!-- Bootstrap & ajax -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+</body>
+
+</html>
