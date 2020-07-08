@@ -1,10 +1,1121 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+
 <head>
-	<meta charset="UTF-8">
-	<title>t1</title>
+	<title>Developer Leaderboard - CodersRank</title>
+	<meta data-n-head="ssr" charset="utf-8">
+	<meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+	<meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website">
+	<meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_US">
+	<meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="CodersRank">
+	<meta data-n-head="ssr" data-hid="description" name="description" content="Maybe You&#x27;re an Emerging Talent. Let&#x27;s Find Out Your Strengths!">
+	<meta data-n-head="ssr" data-hid="itemprop:description" itemprop="description" content="Maybe You&#x27;re an Emerging Talent. Let&#x27;s Find Out Your Strengths!">
+	<meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Maybe You&#x27;re an Emerging Talent. Let&#x27;s Find Out Your Strengths!">
+	<meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Maybe You&#x27;re an Emerging Talent. Let&#x27;s Find Out Your Strengths!">
+	<meta data-n-head="ssr" data-hid="itemprop:image" itemprop="image" content="https://codersrank.io/wp-content/uploads/2020/06/featured-img-developer-2-1.jpg">
+	<meta data-n-head="ssr" data-hid="og:image" property="og:image" content="https://codersrank.io/wp-content/uploads/2020/06/featured-img-developer-2-1.jpg">
+	<meta data-n-head="ssr" data-hid="twitter:image" name="twitter:image" content="https://codersrank.io/wp-content/uploads/2020/06/featured-img-developer-2-1.jpg">
+	<meta data-n-head="ssr" data-hid="og:image:width" property="og:image:width" content="1200">
+	<meta data-n-head="ssr" data-hid="og:image:height" property="og:image:height" content="630">
+	<meta data-n-head="ssr" data-hid="itemprop:name" itemprop="name" content="Developer Leaderboard - CodersRank">
+	<meta data-n-head="ssr" data-hid="og:title" itemprop="og:title" content="Developer Leaderboard - CodersRank">
+	<meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Developer Leaderboard - CodersRank">
+	<link data-n-head="ssr" rel="apple-touch-icon" sizes="72x72" href="/static/apple-touch-icon.png">
+	<link data-n-head="ssr" rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+	<link data-n-head="ssr" rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+	<script data-n-head="ssr" data-hid="gtm-script">
+		if (!window._gtm_init) {
+			window._gtm_init = 1;
+			(function(w, n, d, m, e, p) {
+				w[d] = (w[d] == 1 || n[d] == 'yes' || n[d] == 1 || n[m] == 1 || (w[e] && w[e].p && e[e][p]())) ? 1 : 0
+			})(window, 'navigator', 'doNotTrack', 'msDoNotTrack', 'external', 'msTrackingProtectionEnabled');
+			(function(w, d, s, l, x, y) {
+				w[l] = w[l] || [];
+				w[l].push({
+					'gtm.start': new Date().getTime(),
+					event: 'gtm.js'
+				});
+				w[x] = {};
+				w._gtm_inject = function(i) {
+					if (w.doNotTrack || w[x][i]) return;
+					w[x][i] = 1;
+					var f = d.getElementsByTagName(s)[0],
+						j = d.createElement(s);
+					j.async = true;
+					j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i;
+					f.parentNode.insertBefore(j, f);
+				};
+				w[y]('GTM-TDMTGQ6')
+			})(window, document, 'script', 'dataLayer', '_gtm_ids', '_gtm_inject')
+		}
+	</script>
+	<link rel="preload" href="/_nuxt/runtime.9f35cf.js" as="script">
+	<link rel="preload" href="/_nuxt/commons.app.3c5dd3.js" as="script">
+	<link rel="preload" href="/_nuxt/vendors.app.189e4a.css" as="style">
+	<link rel="preload" href="/_nuxt/vendors.app.10e230.js" as="script">
+	<link rel="preload" href="/_nuxt/app.5f051a.css" as="style">
+	<link rel="preload" href="/_nuxt/app.426bb3.js" as="script">
+	<link rel="preload" href="/_nuxt/pages/leaderboard/developer.952158.css" as="style">
+	<link rel="preload" href="/_nuxt/pages/leaderboard/developer.09f929.js" as="script">
+	<link rel="stylesheet" href="/_nuxt/vendors.app.189e4a.css">
+	<link rel="stylesheet" href="/_nuxt/app.5f051a.css">
+	<link rel="stylesheet" href="/_nuxt/pages/leaderboard/developer.952158.css">
 </head>
+
 <body>
-	
+	<noscript data-n-head="ssr" data-hid="gtm-noscript" data-pbody="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDMTGQ6&" height="0" width="0" style="display:none;visibility:hidden" title="gtm"></iframe></noscript>
+	<div data-server-rendered="true" id="__nuxt">
+		<!---->
+		<div id="__layout">
+			<div id="app" class="app-default">
+				<header class="main-header">
+					<div class="container"><a href="#" aria-label="Open menu" class="main-header-menu-link"><i class="fas fa-bars"></i></a> <a href="/user/druhin13/" aria-label="Home"><svg viewBox="0 0 62 39" fill="none" xmlns="http://www.w3.org/2000/svg" class="main-header-logo">
+								<path fill="#19223C" d="M33.2502 0.0546214L2.14722 19.6346C0.682223 20.5206 -0.0337766 21.5126 0.00122339 22.6116V25.5916C0.0362234 26.6916 0.769223 27.6666 2.20122 28.5176L17.5942 37.4026C17.6856 37.4561 17.7876 37.489 17.8931 37.4989C17.9985 37.5088 18.1048 37.4955 18.2046 37.4599C18.3043 37.4244 18.3951 37.3675 18.4706 37.2931C18.546 37.2188 18.6042 37.1289 18.6412 37.0296L22.0972 28.6776L14.7672 24.5276C14.5559 24.418 14.3783 24.2532 14.2532 24.0506C14.1595 23.8984 14.0971 23.729 14.0696 23.5524C14.042 23.3758 14.05 23.1955 14.0929 23.022C14.1358 22.8484 14.2128 22.6852 14.3195 22.5418C14.4262 22.3984 14.5604 22.2776 14.7142 22.1866L28.1712 13.9396L33.7202 0.427621C33.7424 0.364335 33.7444 0.295717 33.726 0.231235C33.7076 0.166754 33.6695 0.109587 33.6172 0.0676214C33.5652 0.0261725 33.5013 0.00253308 33.4349 0.00019229C33.3684 -0.0021485 33.303 0.0169333 33.2482 0.0546214H33.2502Z"></path>
+								<path d="M58.8002 10.9616L43.6182 1.75764C43.5302 1.70275 43.4314 1.66737 43.3285 1.65387C43.2257 1.64038 43.1211 1.64909 43.0219 1.67941C42.9227 1.70973 42.8311 1.76097 42.7534 1.82966C42.6756 1.89836 42.6135 1.98291 42.5712 2.07764L39.0112 10.4296L46.2362 14.7396C46.4442 14.8526 46.6172 15.0216 46.7382 15.2276C46.8594 15.4343 46.9233 15.6696 46.9233 15.9091C46.9233 16.1487 46.8594 16.384 46.7382 16.5906C46.6182 16.7963 46.4447 16.9657 46.2362 17.0806L32.6752 25.0606L26.9152 38.4676C26.8594 38.5313 26.8309 38.6144 26.8357 38.699C26.8406 38.7835 26.8785 38.8627 26.9412 38.9196C26.9719 38.9476 27.0079 38.969 27.0471 38.9829C27.0862 38.9967 27.1277 39.0026 27.1692 39.0001C27.2106 38.9977 27.2511 38.9871 27.2884 38.9688C27.3257 38.9505 27.3589 38.9249 27.3862 38.8936L37.3352 32.8816L41.2622 38.5216C41.348 38.6516 41.4645 38.7583 41.6015 38.8324C41.7384 38.9066 41.8915 38.9458 42.0472 38.9466H51.4722C51.644 38.9472 51.8127 38.9002 51.9595 38.8109C52.1064 38.7216 52.2256 38.5935 52.3042 38.4406C52.3849 38.2874 52.4232 38.1153 52.4149 37.9422C52.4066 37.7692 52.3522 37.6015 52.2572 37.4566L45.8692 27.6666L58.8022 19.8466C60.2682 18.9596 61.0012 17.9666 61.0012 16.8666V13.9406C61.0012 12.8406 60.2682 11.8486 58.8012 10.9616H58.8002Z" fill="#67A4AC"></path>
+							</svg></a> <a href="#" aria-label="Search" class="main-header-search-link"><i class="fas fa-search"></i></a>
+						<div class="cr-select main-header-search cr-select-sm"><input placeholder=" github username" name="search" type="search" value="" class="cr-input cr-input-sm cr-input-icon cr-color-blue">
+							<!---->
+							<div class="cr-dropdown">
+								<div class="cr-dropdown-content">
+									<!---->
+								</div>
+							</div>
+						</div>
+						<div class="main-header-menu-backdrop"></div>
+						<ul class="main-header-menu">
+							<li class="main-header-menu-item main-header-menu-item-no-border"><a href="/interview-invites">
+									Interview Invites
+									<!----></a></li>
+							<li class="main-header-menu-item"><a href="https://jobs.codersrank.io" rel="noopener" target="_blank">Job Board</a></li>
+							<li class="main-header-menu-item main-header-menu-item-has-dropdown"><span>More<i class="fas fa-chevron-down"></i></span>
+								<div class="main-header-dropdown">
+									<div class="main-header-dropdown-arrow"></div>
+									<div class="main-header-dropdown-list">
+										<ul>
+											<li><a href="/leaderboard/developer" class="nuxt-link-active">Developer Leaderboard</a></li>
+											<li><a href="/leaderboard/company">Company Leaderboard</a></li>
+											<li><a href="/leaderboard/education">Education Leaderboard</a></li>
+											<li><a href="/learn">Learning Path</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="main-header-menu-item"><a class="beamerTrigger"><i class="fas fa-bell"></i> <span>What's New?</span></a></li>
+							<li class="main-header-menu-item main-header-menu-item-has-dropdown main-header-menu-item-user"><img src="https://avatars2.githubusercontent.com/u/46156118?v=4" alt="druhin13" title="druhin13" class="main-header-avatar">
+								<div class="main-header-dropdown main-header-dropdown-left main-header-dropdown-user">
+									<div class="main-header-dropdown-arrow"></div>
+									<div class="main-header-user"><img src="https://avatars2.githubusercontent.com/u/46156118?v=4" alt="druhin13" title="druhin13" class="main-header-avatar">
+										<div class="main-header-user-content">
+											<div class="main-header-user-name">Druhin Tarafder</div>
+											<div class="main-header-user-email">contact@druh.in</div>
+											<div class="main-header-user-link"><a href="/account/">Account Settings</a></div>
+										</div>
+									</div>
+									<div class="main-header-dropdown-divider"></div>
+									<div class="main-header-dropdown-list">
+										<ul>
+											<li class="main-header-menu-item"><a href="/invite">👋 Invite Friends</a></li>
+											<li class="main-header-account-settings"><a href="/account/">Account Settings</a></li>
+											<li class="main-header-account-my-profile main-header-menu-item-no-border"><a href="/user/druhin13/">My profile page</a></li>
+										</ul>
+									</div>
+									<div class="main-header-dropdown-divider"></div>
+									<div class="main-header-dropdown-list main-header-user-logout">
+										<ul>
+											<li><a href="#">Logout</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="main-header-menu-item main-header-menu-item-mobile"><a href="#">Logout</a></li>
+							<li class="main-header-portal vue-portal-target"></li>
+						</ul>
+					</div>
+					<!---->
+				</header>
+				<section data-v-27090c07>
+					<div class="container" data-v-27090c07>
+						<div class="filter" data-v-71b26570 data-v-27090c07>
+							<div class="filter-title" data-v-71b26570>
+								<div class="top-coders-title" data-v-71b26570>TOP DEVELOPERS IN HTML</div>
+								<div class="top-coders-description" data-v-71b26570>From India</div>
+							</div> <button class="cr-button cr-button-md cr-button-fill" data-v-71b26570><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sliders-h" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-sliders-h fa-w-16 fa-3x" data-v-71b26570>
+									<path fill="currentColor" d="M496 384H160v-16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v16H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h80v16c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h336c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm0-160h-80v-16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v16H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h336v16c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h80c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm0-160H288V48c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v16H16C7.2 64 0 71.2 0 80v32c0 8.8 7.2 16 16 16h208v16c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h208c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16z" data-v-71b26570></path>
+								</svg> <span data-v-71b26570>Filter</span></button>
+							<div class="per-page per-page-top" data-v-81f8e9d0 data-v-71b26570><span class="per-page-label" data-v-81f8e9d0>Results:</span>
+								<div class="cr-select per-page-select cr-select-md" data-v-81f8e9d0>
+									<div tabindex="0" class="cr-input cr-color-blue cr-input-md">20
+										<!---->
+									</div> <i class="cr-select-dropdown-button"></i>
+									<div class="cr-dropdown">
+										<div class="cr-dropdown-content">
+											<div class="cr-dropdown-list cr-dropdown-list-no-hover">
+												<div class="cr-dropdown-list-item cr-dropdown-list-item-highlighted cr-dropdown-list-item-selected">20</div>
+												<div class="cr-dropdown-list-item">30</div>
+												<div class="cr-dropdown-list-item">40</div>
+												<div class="cr-dropdown-list-item">50</div>
+												<!---->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filters hidden" data-v-71b26570><span class="filter-by" data-v-71b26570>Filter by:</span>
+								<div class="cr-select filter-select cr-select-md" data-v-71b26570><input placeholder="Country" type="text" value="India" class="cr-input cr-input-md cr-color-blue"> <i class="cr-select-clear-button"></i>
+									<div class="cr-dropdown">
+										<div class="cr-dropdown-content">
+											<div class="cr-dropdown-placeholder">
+												Sorry, no matching options
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cr-select filter-select cr-select-md" data-v-71b26570><input placeholder="City" type="text" value="" class="cr-input cr-input-md cr-color-blue"> <i class="cr-select-dropdown-button"></i>
+									<div class="cr-dropdown">
+										<div class="cr-dropdown-content">
+											<div class="cr-dropdown-placeholder">
+												Sorry, no matching options
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cr-select filter-select cr-select-md" data-v-71b26570><input placeholder="Technology" type="text" value="HTML" class="cr-input cr-input-md cr-color-blue"> <i class="cr-select-clear-button"></i>
+									<div class="cr-dropdown">
+										<div class="cr-dropdown-content">
+											<div class="cr-dropdown-placeholder">
+												Sorry, no matching options
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="board" class="board" data-v-27090c07>
+							<div class="header" data-v-48bd960e data-v-27090c07>
+								<div class="head rank" data-v-48bd960e>Rank</div>
+								<div class="head name" data-v-48bd960e>Name</div>
+								<div class="head username" data-v-48bd960e>Profiles</div>
+								<div class="head country" data-v-48bd960e>Country</div>
+								<div class="head city" data-v-48bd960e>City</div>
+								<div class="head score" data-v-48bd960e>Experience</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>01.</div> <a href="/user/arunpjohny" class="fullname" data-v-07da4ec3>Arun P Johny</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/arunpjohny" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/arunpjohny" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Bengaluru&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Bengaluru</a>
+									<div class="score desktop" data-v-07da4ec3>5,800.4</div>
+									<div class="score mobile" data-v-07da4ec3>5,800.4</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>02.</div> <a href="/user/jainaman224" class="fullname" data-v-07da4ec3>Aman Jain</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/jainaman224" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/jainaman224" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Delhi&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Delhi</a>
+									<div class="score desktop" data-v-07da4ec3>602.3</div>
+									<div class="score mobile" data-v-07da4ec3>602.3</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>03.</div> <a href="/user/rajathans" class="fullname" data-v-07da4ec3>Rajat Hans</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/rajathans" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/rajathans" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Delhi&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Delhi</a>
+									<div class="score desktop" data-v-07da4ec3>596.1</div>
+									<div class="score mobile" data-v-07da4ec3>596.1</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>04.</div> <a href="/user/edith141" class="fullname" data-v-07da4ec3>Ishaan</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/edith141" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/edith141" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Lucknow&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Lucknow</a>
+									<div class="score desktop" data-v-07da4ec3>464.9</div>
+									<div class="score mobile" data-v-07da4ec3>464.9</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>05.</div> <a href="/user/sumitvekariya" class="fullname" data-v-07da4ec3>Sumit Vekariya</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/sumitvekariya" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/sumitvekariya" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Gandhinagar&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Gandhinagar</a>
+									<div class="score desktop" data-v-07da4ec3>436.6</div>
+									<div class="score mobile" data-v-07da4ec3>436.6</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>06.</div> <a href="/user/vmurali100" class="fullname" data-v-07da4ec3>vmurali100</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/vmurali100" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/vmurali100" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Bengaluru&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Bengaluru</a>
+									<div class="score desktop" data-v-07da4ec3>415.5</div>
+									<div class="score mobile" data-v-07da4ec3>415.5</div>
+								</div>
+							</div>
+							<div class="table-root user inline" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>07.</div> <a href="/user/druhin13" class="fullname" data-v-07da4ec3>Druhin Tarafder</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/druhin13" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/druhin13" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Kolkata&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Kolkata</a>
+									<div class="score desktop" data-v-07da4ec3>334.0</div>
+									<div class="score mobile" data-v-07da4ec3>334.0</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>08.</div> <a href="/user/arnavpuri" class="fullname" data-v-07da4ec3>Arnav Puri</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/arnavpuri" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/arnavpuri" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Mumbai&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Mumbai</a>
+									<div class="score desktop" data-v-07da4ec3>312.6</div>
+									<div class="score mobile" data-v-07da4ec3>312.6</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>09.</div> <a href="/user/pramanikriju" class="fullname" data-v-07da4ec3>Riju Pramanik</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/pramanikriju" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/pramanikriju" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Kolkata&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Kolkata</a>
+									<div class="score desktop" data-v-07da4ec3>310.6</div>
+									<div class="score mobile" data-v-07da4ec3>310.6</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>10.</div> <a href="/user/gurpreetsingh2808" class="fullname" data-v-07da4ec3>Gurpreet Singh</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/gurpreetsingh2808" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/gurpreetsingh2808" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Delhi&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Delhi</a>
+									<div class="score desktop" data-v-07da4ec3>307.4</div>
+									<div class="score mobile" data-v-07da4ec3>307.4</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>11.</div> <a href="/user/harkishen-singh" class="fullname" data-v-07da4ec3>Harkishen Singh</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/harkishen-singh" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/harkishen-singh" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Bhubaneshwar&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Bhubaneshwar</a>
+									<div class="score desktop" data-v-07da4ec3>304.8</div>
+									<div class="score mobile" data-v-07da4ec3>304.8</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>12.</div> <a href="/user/vidhyav656" class="fullname" data-v-07da4ec3>Vidhya V</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/vidhyav656" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/vidhyav656" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Mumbai&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Mumbai</a>
+									<div class="score desktop" data-v-07da4ec3>303.2</div>
+									<div class="score mobile" data-v-07da4ec3>303.2</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>13.</div> <a href="/user/anistark" class="fullname" data-v-07da4ec3>Kumar Anirudha</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/anistark" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/anistark" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Bengaluru&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Bengaluru</a>
+									<div class="score desktop" data-v-07da4ec3>294.7</div>
+									<div class="score mobile" data-v-07da4ec3>294.7</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>14.</div> <a href="/user/arpitbbhayani" class="fullname" data-v-07da4ec3>Arpit Bhayani</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/arpitbbhayani" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/arpitbbhayani" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Bengaluru&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Bengaluru</a>
+									<div class="score desktop" data-v-07da4ec3>287.2</div>
+									<div class="score mobile" data-v-07da4ec3>287.2</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>15.</div> <a href="/user/sarancruzer" class="fullname" data-v-07da4ec3>Saravanan Nandhan</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/sarancruzer" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/sarancruzer" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Chennai&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Chennai</a>
+									<div class="score desktop" data-v-07da4ec3>286.1</div>
+									<div class="score mobile" data-v-07da4ec3>286.1</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>16.</div> <a href="/user/yuvrajkakkarnmx" class="fullname" data-v-07da4ec3>Yuvraj Kakkar</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/yuvrajkakkarnmx" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/yuvrajkakkarnmx" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Ambala&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Ambala</a>
+									<div class="score desktop" data-v-07da4ec3>281.6</div>
+									<div class="score mobile" data-v-07da4ec3>281.6</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>17.</div> <a href="/user/prithvisingh18" class="fullname" data-v-07da4ec3>Prithvi Singh</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/prithvisingh18" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/prithvisingh18" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Noida&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Noida</a>
+									<div class="score desktop" data-v-07da4ec3>275.4</div>
+									<div class="score mobile" data-v-07da4ec3>275.4</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>18.</div> <a href="/user/kcak11" class="fullname" data-v-07da4ec3>K.C.Ashish Kumar</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/kcak11" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/kcak11" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Hyderabad&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Hyderabad</a>
+									<div class="score desktop" data-v-07da4ec3>273.8</div>
+									<div class="score mobile" data-v-07da4ec3>273.8</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>19.</div> <a href="/user/kunalvishnoi" class="fullname" data-v-07da4ec3>kunal Vishnoi</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/kunalvishnoi" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/kunalvishnoi" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Noida&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Noida</a>
+									<div class="score desktop" data-v-07da4ec3>273.1</div>
+									<div class="score mobile" data-v-07da4ec3>273.1</div>
+								</div>
+							</div>
+							<div class="table-root" data-v-07da4ec3 data-v-27090c07>
+								<!---->
+								<div class="table-row" data-v-07da4ec3>
+									<div class="rank" data-v-07da4ec3>20.</div> <a href="/user/rajatvijay" class="fullname" data-v-07da4ec3>RAJAT VIJAY</a>
+									<div class="username" data-v-07da4ec3><a target="_blank" href="/user/rajatvijay" class="profile codersrank" data-v-07da4ec3><img src="/_nuxt/img/codersrank-icon.b6b6f5.svg" width="24" height="24" alt="CodersRank" data-v-07da4ec3></a> <a href="https://github.com/rajatvijay" target="_blank" class="profile github" data-v-07da4ec3><img src="/_nuxt/img/github.146e30.svg" width="24" height="24" alt="GitHub" data-v-07da4ec3></a></div> <a href="/leaderboard/developer?country=India&amp;technology=HTML&amp;perpage=20" aria-current="page" class="country nuxt-link-exact-active nuxt-link-active" data-v-07da4ec3><i title="India" role="img" aria-label="India" class="cr-emoji-flag cr-emoji-flag-md" data-v-07da4ec3>🇮🇳</i></a> <a href="/leaderboard/developer?country=India&amp;city=Bengaluru&amp;technology=HTML&amp;perpage=20" class="city" data-v-07da4ec3>Bengaluru</a>
+									<div class="score desktop" data-v-07da4ec3>273.1</div>
+									<div class="score mobile" data-v-07da4ec3>273.1</div>
+								</div>
+							</div>
+							<div class="pagination" data-v-27090c07>
+								<div class="per-page per-page-bottom" data-v-81f8e9d0 data-v-27090c07><span class="per-page-label" data-v-81f8e9d0>Results:</span>
+									<div class="cr-select per-page-select cr-select-md" data-v-81f8e9d0>
+										<div tabindex="0" class="cr-input cr-color-blue cr-input-md">20
+											<!---->
+										</div> <i class="cr-select-dropdown-button"></i>
+										<div class="cr-dropdown">
+											<div class="cr-dropdown-content">
+												<div class="cr-dropdown-list cr-dropdown-list-no-hover">
+													<div class="cr-dropdown-list-item cr-dropdown-list-item-highlighted cr-dropdown-list-item-selected">20</div>
+													<div class="cr-dropdown-list-item">30</div>
+													<div class="cr-dropdown-list-item">40</div>
+													<div class="cr-dropdown-list-item">50</div>
+													<!---->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="page" data-v-27090c07><button disabled="disabled" aria-label="Previous" class="cr-button prev-page cr-button-md cr-button-disabled" data-v-27090c07><svg id="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" data-v-27090c07>
+											<g fill="#FFFFFF" data-v-27090c07>
+												<path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z" data-v-27090c07></path>
+											</g>
+										</svg></button> <input type="number" min="1" oninput="validity.valid||(value='');" value="1" class="cr-input curr-page cr-input-md cr-color-blue" data-v-27090c07><span class="all-pages" data-v-27090c07>of 157</span> <button aria-label="Next" class="cr-button next-page cr-button-md cr-button-fill" data-v-27090c07><svg id="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" data-v-27090c07>
+											<g fill="#FFFFFF" data-v-27090c07>
+												<path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z" data-v-27090c07></path>
+											</g>
+										</svg></button></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="vue-portal-target"></div>
+				<!---->
+			</div>
+		</div>
+	</div>
+	<script>
+		window.__NUXT__ = (function(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, _, $, aa, ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, an, ao, ap, aq, ar, as, at) {
+			Y.rank = p;
+			Y.location = c;
+			Y.visibility = Z;
+			_.rank = p;
+			_.location = c;
+			_.visibility = Z;
+			$.rank = t;
+			$.location = n;
+			$.visibility = "public";
+			am[0] = {
+				title: i,
+				companyName: w,
+				companyLogoURL: x,
+				location: l,
+				startDate: y,
+				endDate: z,
+				description: A
+			};
+			am[1] = {
+				title: B,
+				companyName: C,
+				companyLogoURL: D,
+				location: l,
+				currentlyWorkingHere: a,
+				startDate: E,
+				endDate: F,
+				description: G
+			};
+			am[2] = {
+				title: i,
+				companyName: H,
+				companyLogoURL: I,
+				location: m,
+				startDate: J,
+				endDate: K,
+				description: L
+			};
+			am[3] = {
+				title: i,
+				companyName: M,
+				companyLogoURL: N,
+				location: m,
+				currentlyWorkingHere: a,
+				startDate: O,
+				endDate: P,
+				description: Q
+			};
+			return {
+				layout: "default",
+				data: [{}],
+				fetch: [],
+				error: j,
+				state: {
+					sessionId: "e81WGBAJKM-cPq5MbMsZM7Qj4dTKEKHNd7AoKVjppOTV-M3OgMJwmHds12Y3jAkF69Gcle6ZHO-a1g0mTU5X_iEdrwfRW4bI2fIXxmA98GoyuYRxV1sHmqmepBDheQ433vSD3oqG1e7RgLk7v9zw6GM3yeusu5GFITCPBtgdv_k=",
+					shouldShowPrivateView: b,
+					publicProfileSources: {},
+					privateProfileSources: [],
+					account: {
+						username: s,
+						avatar: S,
+						about: T,
+						languages: [],
+						developerTitle: U,
+						invisibleSkills: [],
+						country: c,
+						city: n,
+						contactEmail: V,
+						contactPhone: "+917003617196",
+						remote: "yes",
+						readyToRelocate: W,
+						jobSpecializations: [{
+							specialization: "Mobile Developer",
+							experience: h
+						}, {
+							specialization: "Team Lead",
+							experience: h
+						}, {
+							specialization: "Frontend Developer",
+							experience: k
+						}],
+						countriesToWork: [],
+						jobType: ["internship", "part-time"],
+						euWorkPermit: W,
+						companyBlacklist: [],
+						companySize: ["small", "startup", "medium"],
+						salary: {
+							currency: "$",
+							minimum: "20000"
+						},
+						linkedIn: X,
+						cv: "Druhin Tarafder Resume UX Designer.pdf",
+						techNotInterested: [],
+						jobNotificationFrequency: e,
+						jobComment: "UI UX designer",
+						jobSkills: [],
+						jobsMatchingSkills: [],
+						email: V,
+						registrationDate: "2019-10-11 06:15:12",
+						hideProfile: b,
+						stackoverflowlinked: a,
+						gitlablinked: b,
+						badges: {
+							worldwide: {},
+							continent: {},
+							country: {
+								CSS: Y,
+								HTML: _
+							},
+							region: {},
+							city: {
+								JavaScript: $
+							}
+						},
+						skillOrder: [q, u, v, aa, ab],
+						workExperience: [{
+							title: i,
+							companyName: w,
+							companyLogoURL: x,
+							location: l,
+							startDate: y,
+							endDate: z,
+							description: A
+						}, {
+							title: B,
+							companyName: C,
+							companyLogoURL: D,
+							location: l,
+							currentlyWorkingHere: a,
+							startDate: E,
+							endDate: F,
+							description: G
+						}, {
+							title: i,
+							companyName: H,
+							companyLogoURL: I,
+							location: m,
+							startDate: J,
+							endDate: K,
+							description: L
+						}, {
+							title: i,
+							companyName: M,
+							companyLogoURL: N,
+							location: m,
+							currentlyWorkingHere: a,
+							startDate: O,
+							endDate: P,
+							description: Q
+						}],
+						firstName: ac,
+						lastName: ad,
+						userId: "5da01df0eea5ed0001d45cc1",
+						gitHubOAuthLinked: a,
+						gender: "Male",
+						DOB: "2001-07-13T00:00:00Z",
+						jobInterest: {
+							status: "Actively looking for a job",
+							updateDate: "2020-06-25T05:33:02Z",
+							expirationDate: "2020-07-25T05:33:02Z"
+						},
+						profileCompletion: {
+							percentage: 91,
+							profilePicture: a,
+							name: a,
+							location: a,
+							contactInfo: a,
+							socialLinks: a,
+							idealRoles: a,
+							techStack: a,
+							workExperience: a,
+							education: a,
+							about: a,
+							jobPreferences: a
+						},
+						website: ae,
+						twitter: af
+					},
+					profile: {
+						username: s,
+						fullName: ag,
+						developerTitle: U,
+						totalScore: 814.9796,
+						avatar: S,
+						city: n,
+						country: c,
+						positionWorldWide: 3224,
+						worldWideAll: 38360,
+						badges: {
+							country: {
+								CSS: Y,
+								HTML: _
+							},
+							city: {
+								JavaScript: $
+							}
+						},
+						scoreBySkills: {
+							CSS: {
+								score: 289.27502,
+								worldWide: 139,
+								worldWideAll: 26386,
+								continent: 27,
+								country: ah,
+								countryAll: 2729,
+								region: g,
+								city: g,
+								cityAll: 103
+							},
+							HTML: {
+								score: ai,
+								worldWide: 182,
+								worldWideAll: 28202,
+								continent: 26,
+								country: aj,
+								countryAll: 3185,
+								region: g,
+								city: g,
+								cityAll: 123
+							},
+							JSON: {
+								score: 33.03988,
+								worldWide: 11336,
+								worldWideAll: 27609,
+								continent: 2058,
+								country: 854,
+								countryAll: 2780,
+								region: 38,
+								city: 30,
+								cityAll: 106
+							},
+							JavaScript: {
+								score: 136.52417,
+								worldWide: 4117,
+								worldWideAll: 27656,
+								continent: 701,
+								country: 250,
+								countryAll: 2893,
+								region: ak,
+								city: t,
+								cityAll: 109
+							},
+							SCSS: {
+								score: 22.142118,
+								worldWide: 4355,
+								worldWideAll: 16672,
+								continent: 806,
+								country: 274,
+								countryAll: 1379,
+								region: al,
+								city: p,
+								cityAll: 51
+							}
+						},
+						skillOrder: [q, u, v, aa, ab],
+						ownProfile: a,
+						updatedProfileAt: "Jul 8, 2020",
+						status: "registered",
+						about: T,
+						workExperience: am,
+						githubRepositoryCount: 135,
+						scoreByLibraries: {
+							ChartJS: {
+								score: 44.27916,
+								technologies: ["Frontend", "Data Visualization"]
+							}
+						},
+						screenshot: "https:\u002F\u002Fcodersrankpublic.blob.core.windows.net\u002Fuserdata\u002F5da01df0eea5ed0001d45cc1\u002Fscreenshot\u002Fp_20200708195735.jpg",
+						firstName: ac,
+						lastName: ad,
+						socialLinks: {
+							linkedin: X,
+							github: "https:\u002F\u002Fgithub.com\u002Fdruhin13",
+							stackoverflow: "https:\u002F\u002Fstackoverflow.com\u002Fusers\u002F11778518\u002Fdruhin",
+							website: ae,
+							twitter: af
+						},
+						techStack: [{
+							skill: "invision",
+							experience: g
+						}, {
+							skill: "adobe xd",
+							experience: h
+						}, {
+							skill: "figma",
+							experience: h
+						}, {
+							skill: "photoshop",
+							experience: h
+						}, {
+							skill: "after effects",
+							experience: g
+						}, {
+							skill: "html",
+							experience: k
+						}, {
+							skill: "javascript",
+							experience: h
+						}, {
+							skill: "css",
+							experience: k
+						}, {
+							skill: "scss",
+							experience: g
+						}, {
+							skill: "adobe illustrator",
+							experience: h
+						}],
+						languages: []
+					},
+					isRefreshing: b,
+					refreshComplete: b,
+					refreshCompleteMessage: d,
+					showReloadButton: a,
+					showRefreshNotification: b,
+					refreshProfileRefreshing: b,
+					refreshProfileProgressCallbacks: [],
+					refreshProfileProgress: e,
+					refreshProfileProgressPrevValue: j,
+					refreshProfileProgressPrevTime: 1594238521904,
+					refreshProfileUpdateStarted: b,
+					refreshProfileRetryCount: e,
+					refreshProfileRetryLimit: 40,
+					topSkills: [q, u, v],
+					invisibleSkills: [],
+					isLoggedIn: a,
+					showInvite: b,
+					showAllBadges: b,
+					showFindJob: b,
+					notifyOptions: ["Once a week", "Twice a week", "Once a month", "Twice a month"],
+					jobOffers: [],
+					totalOffers: e,
+					inviteStatus: "NONE",
+					providers: [],
+					detailedscore: {
+						modalOpen: b,
+						scores: [],
+						language: d
+					},
+					education: {
+						educationModalOpen: b,
+						certificateModalOpen: b,
+						errorModalOpen: b,
+						errorMessage: d,
+						educations: [],
+						certificates: [],
+						selectedIndex: an,
+						modalEducation: r,
+						modalCertificate: r
+					},
+					friends: {
+						errorMessage: d,
+						wrongEmails: [],
+						friendsToInvite: []
+					},
+					github: {
+						modalOpen: b,
+						error: d,
+						polling: f,
+						step: e,
+						selected: d,
+						loading: b,
+						repos: {
+							totalRepos: e,
+							completedRepos: e,
+							provider: ao,
+							jobId: d,
+							host: ao
+						}
+					},
+					gitlab: {
+						modalOpen: b,
+						errorModalOpen: b,
+						error: d,
+						polling: f,
+						step: e,
+						selected: d,
+						loading: b,
+						repos: []
+					},
+					interviewinvites: {
+						error: d,
+						errorModal: b,
+						stats: {
+							accepted: e,
+							expired: e,
+							pending: e,
+							rejected: e,
+							done: e
+						},
+						invites: [],
+						previousFetchData: j,
+						blacklist: []
+					},
+					leaderboard: {
+						currentLeaderboard: "developer",
+						schools: [],
+						companies: [],
+						companyUsers: [],
+						developers: [{
+							username: "arunpjohny",
+							fullname: "Arun P Johny",
+							city: o,
+							country: c,
+							score: 5800.3696,
+							isRegistered: a,
+							rank: g
+						}, {
+							username: "jainaman224",
+							fullname: "Aman Jain",
+							city: R,
+							country: c,
+							score: 602.2645,
+							isRegistered: a,
+							rank: h
+						}, {
+							username: "rajathans",
+							fullname: "Rajat Hans",
+							city: R,
+							country: c,
+							score: 596.1241,
+							isRegistered: a,
+							rank: k
+						}, {
+							username: "edith141",
+							fullname: "Ishaan",
+							city: "Lucknow",
+							country: c,
+							score: 464.92007,
+							isRegistered: a,
+							rank: ap
+						}, {
+							username: "sumitvekariya",
+							fullname: "Sumit Vekariya",
+							city: "Gandhinagar",
+							country: c,
+							score: 436.63498,
+							isRegistered: a,
+							rank: t
+						}, {
+							username: aq,
+							city: o,
+							country: c,
+							score: 415.489,
+							isRegistered: a,
+							rank: ak,
+							fullname: aq
+						}, {
+							username: s,
+							fullname: ag,
+							city: n,
+							country: c,
+							score: ai,
+							isRegistered: a,
+							rank: aj,
+							highlight: a
+						}, {
+							username: "arnavpuri",
+							fullname: "Arnav Puri",
+							city: ar,
+							country: c,
+							score: 312.5653,
+							isRegistered: a,
+							rank: ah
+						}, {
+							username: "pramanikriju",
+							fullname: "Riju Pramanik",
+							city: n,
+							country: c,
+							score: 310.61642,
+							isRegistered: a,
+							rank: 9
+						}, {
+							username: "gurpreetsingh2808",
+							fullname: "Gurpreet Singh",
+							city: R,
+							country: c,
+							score: 307.399,
+							isRegistered: a,
+							rank: p
+						}, {
+							username: "harkishen-singh",
+							fullname: "Harkishen Singh",
+							city: "Bhubaneshwar",
+							country: c,
+							score: 304.80066,
+							isRegistered: a,
+							rank: al
+						}, {
+							username: "vidhyav656",
+							fullname: "Vidhya V",
+							city: ar,
+							country: c,
+							score: 303.23248,
+							isRegistered: a,
+							rank: 12
+						}, {
+							username: "anistark",
+							fullname: "Kumar Anirudha",
+							city: o,
+							country: c,
+							score: 294.66003,
+							isRegistered: a,
+							rank: 13
+						}, {
+							username: "arpitbbhayani",
+							fullname: "Arpit Bhayani",
+							city: o,
+							country: c,
+							score: 287.22128,
+							isRegistered: a,
+							rank: 14
+						}, {
+							username: "sarancruzer",
+							fullname: "Saravanan Nandhan",
+							city: "Chennai",
+							country: c,
+							score: 286.14066,
+							isRegistered: a,
+							rank: 15
+						}, {
+							username: "yuvrajkakkarnmx",
+							fullname: "Yuvraj Kakkar",
+							city: "Ambala",
+							country: c,
+							score: 281.59616,
+							isRegistered: a,
+							rank: 16
+						}, {
+							username: "prithvisingh18",
+							fullname: "Prithvi Singh",
+							city: as,
+							country: c,
+							score: 275.42966,
+							isRegistered: a,
+							rank: 17
+						}, {
+							username: "kcak11",
+							fullname: "K.C.Ashish Kumar",
+							city: "Hyderabad",
+							country: c,
+							score: 273.79025,
+							isRegistered: a,
+							rank: 18
+						}, {
+							username: "kunalvishnoi",
+							fullname: "kunal Vishnoi",
+							city: as,
+							country: c,
+							score: 273.12796,
+							isRegistered: a,
+							rank: 19
+						}, {
+							username: "rajatvijay",
+							fullname: "RAJAT VIJAY",
+							city: o,
+							country: c,
+							score: 273.12317,
+							isRegistered: a,
+							rank: at
+						}],
+						country: c,
+						city: f,
+						technology: q,
+						allPages: 157,
+						usersPerPage: at,
+						currentPage: g,
+						hasCurrentRecord: b,
+						loading: b,
+						developersHasCurrentRecord: a
+					},
+					learn: {
+						errorMessage: d,
+						errorModalOpen: b,
+						courseStats: j,
+						chapters: j,
+						chapter: j,
+						lessons: j,
+						subLesson: j
+					},
+					portfolio: {
+						modalOpen: b,
+						errorModalOpen: b,
+						errorMessage: d,
+						portfolios: [],
+						selectedIndex: an,
+						mode: r
+					},
+					privaterepo: {
+						errorModalOpen: b,
+						error: d,
+						modalOpen: b,
+						shouldRefreshProfileOnModalClose: b,
+						isRepoListLoading: a,
+						score: e,
+						repos: []
+					},
+					workexperience: {
+						modalOpen: b,
+						errorModalOpen: b,
+						errorMessage: d,
+						workExperiences: am,
+						displayableWorkExperiences: [{
+							companyName: w,
+							companyLogoURL: x,
+							titles: [{
+								originalIndex: g,
+								title: i,
+								description: A,
+								startDate: y,
+								endDate: z,
+								location: l,
+								currentlyWorkingHere: f,
+								highlightedTechnologies: f,
+								otherTechnologies: f
+							}]
+						}, {
+							companyName: C,
+							companyLogoURL: D,
+							titles: [{
+								originalIndex: h,
+								title: B,
+								description: G,
+								startDate: E,
+								endDate: F,
+								location: l,
+								currentlyWorkingHere: a,
+								highlightedTechnologies: f,
+								otherTechnologies: f
+							}]
+						}, {
+							companyName: H,
+							companyLogoURL: I,
+							titles: [{
+								originalIndex: k,
+								title: i,
+								description: L,
+								startDate: J,
+								endDate: K,
+								location: m,
+								currentlyWorkingHere: f,
+								highlightedTechnologies: f,
+								otherTechnologies: f
+							}]
+						}, {
+							companyName: M,
+							companyLogoURL: N,
+							titles: [{
+								originalIndex: ap,
+								title: i,
+								description: Q,
+								startDate: O,
+								endDate: P,
+								location: m,
+								currentlyWorkingHere: a,
+								highlightedTechnologies: f,
+								otherTechnologies: f
+							}]
+						}],
+						companyMapping: {
+							KeralaOnRoad: e,
+							"breakthru.": g,
+							"Arbor Research India": h,
+							Stamurai: k
+						},
+						modal: {
+							type: r,
+							title: d,
+							companyLogo: d,
+							companyName: d,
+							location: d,
+							startDateMonth: d,
+							startDateYear: d,
+							endDateMonth: d,
+							endDateYear: d,
+							currentlyWorkingHere: d,
+							description: d,
+							highlightedTechnologies: [],
+							otherTechnologies: []
+						}
+					}
+				},
+				serverRendered: a,
+				routePath: "\u002Fleaderboard\u002Fdeveloper"
+			}
+		}(true, false, "India", "", 0, void 0, 1, 2, "UX Designer Intern", null, 3, "Kolkata, India", "Remote, Earth", "Kolkata", "Bengaluru", 10, "HTML", "add", "druhin13", 5, "CSS", "JavaScript", "KeralaOnRoad", "https:\u002F\u002Flogo.clearbit.com\u002Fkeralaonroad.com", "2019-09-01T00:00:00Z", "2019-11-01T00:00:00Z", "Redesigned the Mobile website\nCollaborated with the Back end team to deploy new features\nIncreased the User engagement by 25%\nCompleted tasks at an average of 10% before deadlines", "Founder", "breakthru.", "https:\u002F\u002Fcodersrankpublicdev.blob.core.windows.net\u002Fuserdata\u002F5da01df0eea5ed0001d45cc1\u002Fcompany_logos\u002F2020-05-12_05_34_56-0.png", "2019-01-01T00:00:00Z", "2020-05-12T05:35:09Z", "Leader of a Web Development team\nDesigning UI and converting it to Front end code\nMaintaining a 97% customer satisfaction score\nProviding additional training to the new members of my team", "Arbor Research India", "https:\u002F\u002Fcodersrankpublicdev.blob.core.windows.net\u002Fuserdata\u002F5da01df0eea5ed0001d45cc1\u002Fcompany_logos\u002F2020-05-12_05_33_30-mp_logo.jpg", "2020-02-01T00:00:00Z", "2020-03-01T00:00:00Z", "Designed a responsive e-commerce website from scratch,\nfor a brand named - InsaneDeals.\nCollaborated with the developers to deploy new features.", "Stamurai", "https:\u002F\u002Fcodersrankpublicdev.blob.core.windows.net\u002Fuserdata\u002F5da01df0eea5ed0001d45cc1\u002Fcompany_logos\u002F2020-05-12_05_35_55-0 (1).png", "2020-04-01T00:00:00Z", "2020-05-12T05:36:26Z", "Currently working on the App Landing Page", "Delhi", "https:\u002F\u002Favatars2.githubusercontent.com\u002Fu\u002F46156118?v=4", "18 years old Self-taught UX designer with some front-end coding skills 🤙🏻", "html, css, js, ui\u002Fux design", "contact@druh.in", "no", "https:\u002F\u002Fwww.linkedin.com\u002Fin\u002Fdruhin13\u002F", {}, "highlighted", {}, {}, "JSON", "SCSS", "Druhin", "Tarafder", "https:\u002F\u002Fdruh.in", "https:\u002F\u002Ftwitter.com\u002FDruhin13", "Druhin Tarafder", 8, 333.9982, 7, 6, 11, Array(4), -1, "github.com", 4, "vmurali100", "Mumbai", "Noida", 20));
+	</script>
+	<script src="/_nuxt/runtime.9f35cf.js" defer></script>
+	<script src="/_nuxt/pages/leaderboard/developer.09f929.js" defer></script>
+	<script src="/_nuxt/commons.app.3c5dd3.js" defer></script>
+	<script src="/_nuxt/vendors.app.10e230.js" defer></script>
+	<script src="/_nuxt/app.426bb3.js" defer></script>
+	<script src="//rum-static.pingdom.net/pa-5ad6486446534f00070006f0.js" async></script>
+	<script>
+		var beamer_config = {
+			product_id: "dDLtaGEd22583"
+		}
+	</script>
+	<script type="text/javascript" src="https://app.getbeamer.com/js/beamer-embed.js" defer></script>
 </body>
+
 </html>
